@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 export default class Modal extends Component {
   render() {
-    let { name, price, description, quantity, image } = this.props.content;
+    let { id, name, price, description, quantity, image } = this.props.content;
     return (
       <>
         <div className="modal fade" id="shoeDetailModal" tabIndex={-1}>
@@ -16,7 +16,11 @@ export default class Modal extends Component {
               <div className="modal-body">
                 <div className="row">
                   <div className="col-4">
-                    <img src={image} alt="" className="img-fluid border border-3" />
+                    <img
+                      src={image}
+                      alt={`Shoe Pic ${id}`}
+                      className="img-fluid border border-3"
+                    />
                   </div>
                   <div className="col-8">
                     <h4 className="fw-bold">{name}</h4>
