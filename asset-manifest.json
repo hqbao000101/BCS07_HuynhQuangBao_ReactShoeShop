@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/BCS07_HuynhQuangBao_ReactShoeShop/static/css/main.585b89ed.css",
+    "main.js": "/BCS07_HuynhQuangBao_ReactShoeShop/static/js/main.9131eba4.js",
+    "index.html": "/BCS07_HuynhQuangBao_ReactShoeShop/index.html",
+    "main.585b89ed.css.map": "/BCS07_HuynhQuangBao_ReactShoeShop/static/css/main.585b89ed.css.map",
+    "main.9131eba4.js.map": "/BCS07_HuynhQuangBao_ReactShoeShop/static/js/main.9131eba4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.585b89ed.css",
+    "static/js/main.9131eba4.js"
+  ]
+}
