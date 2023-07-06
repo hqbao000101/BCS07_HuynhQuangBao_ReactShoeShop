@@ -6,7 +6,10 @@ export default class Modal extends Component {
     return (
       <>
         <div className="modal fade" id="shoeDetailModal" tabIndex={-1}>
-          <div className="modal-dialog modal-dialog-centered">
+          <div
+            className="modal-dialog modal-dialog-centered"
+            style={{ maxWidth: "40vw" }}
+          >
             <div className="modal-content">
               <div className="modal-header bg-primary">
                 <h2 className="modal-title text-uppercase text-white">
@@ -15,19 +18,21 @@ export default class Modal extends Component {
               </div>
               <div className="modal-body">
                 <div className="row">
-                  <div className="col-4">
+                  <div className="col-5">
                     <img
                       src={image}
                       alt={`Shoe Pic ${id}`}
                       className="img-fluid border border-3"
                     />
                   </div>
-                  <div className="col-8">
-                    <h4 className="fw-bold">{name}</h4>
-                    <p className="fw-bold">$ {price.toFixed(2)}</p>
-                    <p>{description}</p>
-                    <p className="text-success fw-bold">
-                      <span className="me-2 fw-bolder text-black">
+                  <div className="col-7 d-flex flex-column justify-content-between">
+                    <div>
+                      <h4 className="fw-bold fs-4">{name}</h4>
+                      <p className="fw-semibold fs-5">$ {price.toFixed(2)}</p>
+                      <p className="fs-5">{description}</p>
+                    </div>
+                    <p className="text-success fw-semibold fs-5 mb-1">
+                      <span className="me-2 text-black">
                         Quantity:
                       </span>
                       {quantity}

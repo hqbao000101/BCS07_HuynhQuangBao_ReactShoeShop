@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ShoeStore from "./Components/ShoeStore";
 import ProductList from "./Components/ProductList";
 import Home from "./Components/Home";
+import ShoppingCart from "./Components/ShoppingCart";
 
 export default function App() {
   return (
@@ -13,6 +14,9 @@ export default function App() {
         </Route>
         <Route path="/shop" element={<ShoeStore />}>
           <Route index element={<ProductList />} />
+        </Route>
+        <Route path="/cart" element={<ShoeStore />}>
+          <Route index element={<ShoppingCart />} />
         </Route>
       </Routes>
     </BrowserRouter>

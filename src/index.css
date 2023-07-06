@@ -14,7 +14,12 @@ code {
 }
 
 .sidebar {
-  padding: 15vw 0 0 5vw;
+  padding: 6vw 0 0 5vw;
+}
+
+.sidebar .navigation {
+  position: sticky;
+  top: 5vw;
 }
 
 .sidebar ul li {
@@ -46,4 +51,55 @@ button:hover {
   background-color: #e67e22 !important;
   box-shadow: 2px 2px 5px black;
   border-color: #e67e22 !important;
+}
+
+#cart-icon {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  color: white;
+  transition: all 0.5s;
+}
+
+#cart-quantity {
+  position: absolute;
+  top: 35%;
+  right: 20px;
+  transform: translateY(-50%);
+  text-align: center;
+  background-color: #e67e22;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 10px;
+  color: white;
+  transition: all 0.5s;
+}
+
+#cart-wrapper:hover #cart-icon {
+  color: #ffd6a5;
+}
+
+#cart-wrapper:hover #cart-quantity {
+  background-color: #f86f03;
+}
+
+table i {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+table i:hover {
+  color: #e67e22;
+}
+
+table tbody tr td {
+  width: calc(70% / 5);
+}
+
+table tbody tr #product-desc {
+  width: 30%;
+  padding: 0 50px;
 }
